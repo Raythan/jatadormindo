@@ -1,0 +1,571 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-bottom: .5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#logo {
+    width: 8%;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.menu-link {
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.main-btn {
+    background-color: #0377FF;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 20%;
+    height: 20%;
+    padding: 2% 2%;
+    border-radius: 10%;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 100px;
+        color: #FFF;
+    }
+
+.main-btn {
+    background-color: #0377FF;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+    .main-btn:hover {
+        text-decoration: none;
+        color: #FFF;
+        background-color: transparent;
+        border-color: #3EC1D5;
+    }
+
+.carousel-indicators .active {
+    background-color: #0377FF;
+}
+
+
+#about-area {
+    background-color: #F9F9F9;
+}
+
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*.main-title::after {
+        content: "";
+        border-top: 2px solid #333;
+        width: 15%;
+        position: absolute;
+        top: 60px;
+        left: 42.5%;
+    }*/
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+    #about-list li {
+        line-height: 30px;
+    }
+
+    #about-list i {
+        color: #0377FF;
+        margin-right: 15px;
+    }
+
+.img-fluid {
+    max-width: 100%;
+}
+
+/* Footer */
+
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
+
+    .contact-box i {
+        color: #444;
+        border: solid 1px #444;
+        border-radius: 50%;
+        width: 10%;
+        height: 150%;
+        line-height: 200%;
+        font-size: 100%;
+        margin-bottom: 2%;
+    }
+
+    .contact-box p {
+        font-size: 130%;
+    }
+
+.contact-tile {
+    font-weight: bold;
+    color: #0377FF;
+}
+
+.contact2-tile {
+    font-weight: bold;
+    color: yellow;
+}
+
+#msg-box p {
+    font-size: 22px;
+}
+
+#contact-form input[type="text"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+
+    #contact-form .main-btn:hover {
+        color: #0377FF;
+    }
+
+/* Copy */
+
+#copy-area {
+    background-color: #0377FF;
+}
+
+    #copy-area .container {
+        padding: 1% 0;
+        text-align: center;
+    }
+
+        #copy-area .container p {
+            margin-bottom: 0;
+            color: white;
+        }
+
+        #copy-area .container a {
+            font-weight: bold;
+            color: yellow;
+        }
+
+            #copy-area .container a:hover {
+                text-decoration: none;
+                color: black;
+            }
+
+/* responsive */
+@media(max-width: 768px) {
+
+    /* geral */
+    .container {
+        padding: 20px 0;
+    }
+
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+        height: auto;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    /* data */
+    .circle-box div {
+        padding: 0 10px;
+    }
+
+    #data-area p {
+        font-size: 16px;
+    }
+
+    /* team */
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    /* apply */
+    #apply-area .apply-box {
+        padding: 50px 25px;
+    }
+
+    /* news */
+    #news-area p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #email-input {
+        width: 70%;
+    }
+
+    #call-area {
+        margin-top: 30px;
+    }
+
+        #call-area .container {
+            padding: 30px;
+        }
+
+        #call-area p, #call-area #call-btn {
+            font-size: 16px;
+        }
+}
+
+
+@media(max-width: 425px) {
+
+    /* slider */
+    #mainSlider {
+        margin-top: 90px;
+    }
+
+        #mainSlider .carousel-caption {
+            top: 5%;
+        }
+
+            #mainSlider .carousel-caption h2 {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+
+            #mainSlider .carousel-caption p {
+                display: none;
+            }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* about */
+    .main-title {
+        font-size: 30px;
+    }
+
+    #about-area img {
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+
+    /* data */
+    .circle-box {
+        width: 50%;
+    }
+
+    #team-area .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* apply */
+    #apply-area {
+        height: auto;
+    }
+
+    #company-img {
+        display: none;
+    }
+
+
+
+    .project-box {
+        width: 50%;
+    }
+
+    /* news */
+    #news-area .main-title {
+        font-size: 24px;
+    }
+
+    #news-area p {
+        font-size: 16px;
+    }
+
+    #email-input {
+        width: 80%;
+    }
+
+    #call-area p, #call-area #call-btn {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    #call-area p, #call-area #call-btn {
+        margin: 0;
+        width: 50%;
+    }
+
+    /* contact */
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
+    }
+
+
+    #copy-area2 {
+        background-color: blue;
+    }
+
+        #copy-area2 .container {
+            padding: 1% 0;
+            text-align: center;
+        }
+
+            #copy-area2 .container p {
+                margin-bottom: 0;
+            }
+
+            #copy-area2 .container a {
+                font-weight: bold;
+                color: blue;
+            }
+
+                #copy-area2 .container a:hover {
+                    text-decoration: none;
+                    color: yellow;
+                }
+
+    footer a:hover {
+        color: white;
+    }
+
+    #cores {
+        color: white;
+        background: white;
+        background-color: white;
+    }
+}
+
+/* Barra de navegação */
+header, .navbar {
+    background-color: #FFD703;
+}
+
+    .navbar a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 150%;
+        padding: .5%;
+    }
+
+/* Quartos */
+.project-box {
+    margin-bottom: 30px;
+}
+
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area {
+    margin: 1%;
+}
+
+    #portfolio-area .filter-btn {
+        color: #444;
+        border: 1px solid #444;
+        background-color: transparent;
+        text-transform: none;
+        margin: 1%;
+        width: auto;
+        height: 10%;
+        line-height: 100%;
+        padding: 2%;
+    }
+
+        #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+            color: #FFF;
+            border: 1px solid #0377FF;
+            background-color: #0377FF;
+        }
+
+.buttonQuartos {
+    display: block;
+    height: auto;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: #FFD703;
+    border-color: #FFD703;
+    color: black;
+}
+
+/* News Letter */
+
+#news-area {
+    text-align: center;
+    background-color: #F9F9F9;
+}
+
+    #news-area p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+#email-input {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #0377FF;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+
+#news-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #0377FF;
+    background-color: #0377FF;
+    color: #FFF;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    position: absolute;
+    transition: .5s;
+}
+
+    #news-btn:hover {
+        background-color: #FFF;
+        color: #0377FF;
+    }
+
+/* Call To Action */
+
+#call-area {
+    background-color: #0377FF;
+    text-transform: uppercase;
+}
+
+    #call-area .container {
+        padding: 2%;
+    }
+
+    #call-area .row {
+        display: block;
+        text-align: center;
+    }
+
+    #call-area p {
+        color: #FFF;
+        font-weight: bold;
+        font-size: 150%;
+        height: 10%;
+        line-height: 100%;
+        letter-spacing: 2px;
+        display: inline;
+    }
+
+    #call-area #call-btn {
+        background-color: #FFF;
+        color: #0377FF;
+        font-weight: bold;
+        font-size: 150%;
+        width: auto;
+        letter-spacing: 2px;
+    }

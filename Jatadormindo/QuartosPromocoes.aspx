@@ -1,0 +1,52 @@
+﻿<%@ Page Title="Quartos e Promoções" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="QuartosPromocoes.aspx.cs" Inherits="Jatadormindo.QuartosPromocoes" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- Quartos -->
+    <form action="QuartosPromocoes">
+        <div id="portfolio-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Conheça nossos quartos!</h3>
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+                        <button class="buttonQuartos" onclick="testandoForm()">OFERTA R$550 DIARIA</button>
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
+                        <button class="buttonQuartos" onclick="testandoForm()">OFERTA R$550 DIARIA</button>
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
+                        <button class="buttonQuartos" onclick="testandoForm()">OFERTA R$550 DIARIA</button>
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+                        <button class="buttonQuartos" onclick="testandoForm()">OFERTA R$550 DIARIA</button>
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
+                        <button class="buttonQuartos" onclick="testandoForm()">OFERTA R$550 DIARIA</button>
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
+                        <button class="buttonQuartos" onclick="testandoForm()">OFERTA R$550 DIARIA</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <!-- Newsletter -->
+                <div id="news-area">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique por dentro das novidades</h3>
+                    </div>
+                    <p>Assine nossa lista de e-mails, e receba nossas ofertas!</p>
+                    <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+                    <input type="submit" id="news-btn" onclick="testandoForm()" value="Inscrever">
+                </div>
+            </div>
+        </div>
+    </form>
+</asp:Content>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jatadormindo", "Jatadormindo\Jatadormindo.csproj", "{A0EBE658-2023-4F90-A434-1527E110D379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jatadormindoo", "Jatadormindoo\Jatadormindoo.csproj", "{03C16EC2-389C-42E2-9066-1B27996C2120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0EBE658-2023-4F90-A434-1527E110D379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0EBE658-2023-4F90-A434-1527E110D379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0EBE658-2023-4F90-A434-1527E110D379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0EBE658-2023-4F90-A434-1527E110D379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C16EC2-389C-42E2-9066-1B27996C2120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C16EC2-389C-42E2-9066-1B27996C2120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C16EC2-389C-42E2-9066-1B27996C2120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C16EC2-389C-42E2-9066-1B27996C2120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D3D5C54-DAFE-4E75-86D0-AD09D9325A3F}
+	EndGlobalSection
+EndGlobal
