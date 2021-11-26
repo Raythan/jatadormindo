@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 
 namespace Jatadormindo.Models
 {
     public class SQLConnect : IDisposable
     {
-        private string connectionstr = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TrabalhoEntrega;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionstr = WebConfigurationManager.AppSettings["connstr"];
         private SqlConnection conn;
         public void InsereCadastro(string qry)
         {
