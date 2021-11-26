@@ -90,21 +90,20 @@
         </div>
     </div>
 </form>
-@*@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/jqueryval")*@
 <script type="text/javascript">
     function Cadastrar() {
-        $.post("@Url.Action("Cadastrar", "Cadastro")", {
+        $.post("@Url.Action("Cadastrar", "Cadastro")",
+        {
             Nome: $("#inputNome").val(),
-            CPF: $("#inputCPF").val(),
+            CPF: $("#inputCpf").val(),
             Idade: $("#inputIdade").val(),
             Endereco: $("#inputEndereco").val(),
             Cidade: $("#inputCidade").val(),
             Estado: $("#inputEstado").val(),
-            CEP: $("#inputCep").val(),
+            CEP: $("#inputCEP").val(),
             Email: $("#inputEmail").val()
         }, function (data) {
-            alert(data);
         });
-    }
+        alert("Seus dados foram armazenados, em breve entraremos em contato!");
+    };
 </script>
