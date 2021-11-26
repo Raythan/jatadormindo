@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Jatadormindo.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Jatadormindo.MvcApplication" Language="C#" %>

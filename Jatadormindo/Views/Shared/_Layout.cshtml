@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Jatadormindo</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="row navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <img id="logo" src="@Url.Content("img/hdcagency_logo.svg")" alt="hDC Agency" />
+                @Html.ActionLink("JATADORMINDO", "Index", "Home")
+                @Html.ActionLink("O Hotel", "Index", "Hotel")
+                @Html.ActionLink("QuartosPromocoes", "Index", "QuartosPromocoes")
+                @Html.ActionLink("Contato", "Index", "Contato")
+                @Html.ActionLink("Cadastro", "Index", "Cadastro")
+            </div>
+        </div>
+    </header>
+
+    <div class="container body-content">
+        @RenderBody();
+    </div>
+    <footer>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-4 contact-box">
+                            <p>
+                                <span class="contact2-tile">Contatos</span>
+                            </p>
+                            <p><span class="contact2-tile">Telefone</span> (00)99999-9999</p>
+                            <p><span class="contact2-tile">Whatsapp</span> (00)00000-0000</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <p><span class="contact2-tile">Horários:</span> 24 Horas</p>
+                            <p><span class="contact2-tile">Endereço</span> Rua: AAA - 118 Bairro: AAA </p>
+                            <p>Cidade: BB/CC</p>
+                        </div>
+                        <div class="col-md-4 contact-box">
+                            <p><span class="contact2-tile">Confiram as nossa redes sociais!</span></p>
+                            <br>
+                            <div id="cores">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-skype"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Desenvolvido por <a href="" target="_blank">JATADORMINDO</a> &copy; @DateTime.Now.Year
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @RenderSection("styles", required: false)
+    @RenderSection("templates", required: false)
+</body>
+</html>
